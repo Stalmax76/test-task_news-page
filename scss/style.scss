@@ -47,10 +47,8 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: baseline;
-   //text-align: center;
 }
 .top-header {
-   //text-align: center;
 }
 .top-header__icons {
    display: flex;
@@ -473,3 +471,18 @@ body {
    }
 }
 //========================= Reklama ========================================
+.banner__foto {
+   margin: 20px 0px 10px 0px;
+   min-width: 600px;
+}
+.foto-banner {
+}
+.foto-banner__link {
+}
+.foto-banner__link img {
+   max-width: 100%;
+}
+.foto-banner:hover {
+   border: 3px solid #000;
+}
+//======================================second page =======================
