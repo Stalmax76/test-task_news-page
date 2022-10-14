@@ -232,10 +232,11 @@ body {
   flex: 1 1 auto;
   padding-bottom: 10px;
   display: flex;
+  align-items: start;
 }
 
 .news-cards-with-foto {
-  flex: 0 1 34%;
+  flex: 0 1 33.33%;
   justify-content: center;
 }
 .page-news__item {
@@ -244,12 +245,15 @@ body {
 .item-card-with-foto {
   display: flex;
   border-bottom: 1px solid rgba(224, 224, 224, 1);
-  padding-bottom: 18px;
+  padding-bottom: 15px;
   justify-content: space-between;
-  margin-bottom: 10px;
+  padding-top: 10px;
 }
+//.item-card-with-foto:not(:last-child) {
+//  margin-bottom: 20px;
+//}
 .item-card-with-foto__image {
-  width: auto;
+  min-width: 245px;
 }
 .item-card-with-foto__image img {
   min-width: 100%;
@@ -264,6 +268,7 @@ body {
 .item-card-with-foto__title {
 }
 .title-card-with-foto {
+  flex: 1 1 auto;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -289,10 +294,11 @@ body {
 }
 
 .item-page-news__big-cards {
-  flex: 0 0 41%;
+  margin-top: 5px;
+  flex: 0 1 41%;
 }
 .big-card__items {
-  padding-top: 20px;
+  padding-top: 2px;
   display: flex;
   flex-direction: column;
   max-width: 630px;
@@ -331,15 +337,15 @@ body {
   padding-bottom: 10px;
 }
 .news-cards {
-  padding: 0px 0px 0px 20px;
-  max-width: 23.5%;
-  justify-content: center;
+  padding: 0px 0px 0px 5px;
+  max-width: 25%;
+  justify-content: space-around;
 }
 .news-cards__items {
-  flex: 0 0 23%;
+  flex: 1 1 100%;
 }
 .news-card__item {
-  padding-top: 16px;
+  padding-top: 2px;
 }
 .item-news-card {
   border-bottom: 1px solid rgba(224, 224, 224, 1);
@@ -382,12 +388,12 @@ body {
   //=========================== big card
 
   .item-page-news__big-cards {
-    flex: 0 1 40%;
+    flex: 0 1 60%;
     padding-bottom: 5px;
   }
 
   .news-cards {
-    flex: 0 1 60%;
+    flex: 0 1 40%;
     margin: 0 auto;
     max-width: 42%;
     padding-left: 3px;
@@ -454,28 +460,31 @@ body {
     padding: 10px 0px;
   }
   .item-card-with-foto__image {
-    flex: 0 1 40%;
+    flex: 0 1 50%;
   }
   .item-card-with-foto__content {
     flex: 0 1 50%;
   }
 }
-@media (max-width: 477.98px) {
+@media (max-width: 694.98px) {
   .item-card-with-foto {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0px;
+    padding-top: 10px;
+    padding-right: 10px;
   }
   .item-card-with-foto__image {
-    flex: 0 1 auto;
+    min-width: 80%;
     margin: 0 auto;
   }
   .item-card-with-foto__image img {
     min-height: 100%;
   }
   .item-card-with-foto__content {
-    flex: 0 1 50%;
+    //flex: 0 1 50%;
+    max-width: 80%;
+    overflow: hidden;
   }
 }
 //========================= Reklama ========================================
@@ -498,28 +507,26 @@ body {
 .second-page {
   padding-top: 5px;
   display: flex;
+  column-gap: 3px;
   margin: 0 auto;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 .second-page__video {
+  padding-top: 10px;
   flex: 0 1 50%;
   padding-right: 10px;
+  align-items: center;
 }
 .card-video {
-  margin-top: 2px;
   position: relative;
 }
 .card-video__video-file {
-  max-width: auto;
+  width: 95%;
   height: 100%;
-  position: relative;
 }
 .card-video__video-file iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  min-width: 765px;
+  min-height: 570px;
   object-fit: cover;
 }
 .card-video__video-info {
@@ -528,9 +535,11 @@ body {
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
-  min-height: 12%;
+  min-height: 15%;
   padding-left: 20px;
+  padding-right: 10px;
 }
+
 .card-video__title {
   padding-top: 11px;
 }
@@ -539,23 +548,23 @@ body {
   padding-bottom: 5px;
 }
 .second-page__cards {
-  flex: 1 0 50%;
+  flex-wrap: nowrap;
+  flex: 0 1 50%;
   justify-content: center;
+  align-items: stretch;
 }
 @media (max-width: 1569.98px) {
   .second-page {
     flex-direction: column;
+    box-sizing: border-box;
   }
   .second-page__video {
-    margin: 0 auto;
-    flex: 1 1 auto;
-    min-width: 320px;
-    height: 514px;
-    width: 760px;
-    margin-bottom: 15px;
+    flex: 0 1 100%;
+    padding-bottom: 10px;
   }
 
   .second-page__cards {
+    padding-top: 5px;
     justify-content: start;
     align-items: flex-start;
   }
@@ -568,4 +577,67 @@ body {
     display: none;
   }
 }
-//===============================================================================================
+//======================================== third page  =======================================================
+.third-page {
+  margin-bottom: 15px;
+  display: inline-flex;
+  column-gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.third-page__info-cards-with-photo {
+  flex: 0 1 45%;
+}
+.news-cards-with-foto {
+}
+
+.third-page__info-cards {
+  flex: 0 1 35%;
+}
+
+.block-blurb {
+  flex: 0 1 30%;
+  max-width: 100%;
+  height: 100%;
+}
+.blurb-body {
+}
+.blurb__title {
+}
+.blurb__banner {
+}
+.blurb__banner img {
+  width: 100%;
+}
+@media (max-width: 1569.98px) {
+  .third-page {
+    flex-direction: column;
+  }
+}
+
+//================================= fourth-page ===========================
+.fourth-page {
+}
+.fourth-page__body {
+}
+.fourth-page__title {
+}
+.fourth-page__swiper {
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-scrollbar {
+}
