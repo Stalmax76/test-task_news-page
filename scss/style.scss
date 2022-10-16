@@ -1,4 +1,5 @@
 @import "_nullStyle";
+@import "_header";
 html,
 body {
   height: 100%;
@@ -31,6 +32,7 @@ body {
 .content {
   flex: 1 1 auto;
   box-sizing: border-box;
+  background-color: rgb(241, 203, 15);
 }
 .first__page-news {
 }
@@ -38,186 +40,7 @@ body {
   flex: 0 0 auto;
   background-color: green;
 }
-//============================ header-block ======================================================
-.header__container {
-  padding: 60px 40px 0px 10px;
-}
-.header__top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.top-header {
-}
-.top-header__icons {
-  display: flex;
-  justify-content: space-between;
-  width: 14%;
-  column-gap: 20px;
-  justify-content: center;
-  text-align: center;
-}
-.icon-header {
-  padding-bottom: 10px;
-}
-.icon {
-  height: 20px;
-  padding: 5px;
-}
-.icon-header__burger {
-  width: 20px;
-}
-.icon-header__search {
-  width: 15px;
-}
-.icon-header__wether {
-}
 
-.title {
-  font-weight: 400;
-  font-size: 60px;
-  font-family: "Train One";
-  line-height: 87px;
-  color: #000000;
-}
-.button {
-  font-size: 18px;
-  line-height: 24px;
-  height: 42px;
-  background-color: rgba(41, 136, 202, 1);
-  color: rgba(255, 255, 255, 1);
-  text-align: center;
-  padding: 9px 10px;
-  min-width: 09%;
-  align-items: center;
-}
-.button:hover {
-  background-color: rgb(12, 82, 136);
-  transition: all 0.3s ease 0s;
-}
-
-.header__menu {
-  margin: 0 auto;
-}
-.menu {
-  text-align: center;
-  padding: 30px 20px 0px 20px;
-}
-.menu__items {
-  display: flex;
-  justify-content: center;
-  column-gap: 70px;
-  row-gap: 30px;
-  flex-wrap: wrap;
-}
-.menu__item {
-  font-size: 24px;
-  line-height: 33px;
-  color: #000000;
-  padding: 1px 5px;
-}
-.menu__item :hover {
-  text-decoration: underline;
-  transition: all 0.3s ease 0s;
-}
-
-//===================================
-@media (max-width: 1199.98px) {
-  [class*="__container"] {
-    max-width: 62%;
-    transition: all 0.3s ease 0s;
-    padding: 20px 5px 5px;
-
-    .header__top {
-      height: 150px;
-    }
-    .icon-header {
-      align-self: flex-end;
-    }
-    .button {
-      align-self: flex-end;
-    }
-    .title {
-      align-self: start;
-    }
-    .menu__items {
-      column-gap: 30px;
-      row-gap: 20px;
-      width: 100%;
-    }
-  }
-}
-
-@media (max-width: 990.98px) {
-  [class*="__container"] {
-    max-width: 63%;
-    padding-top: 0px;
-
-    .header__top {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      display: flexbox;
-      row-gap: 0px;
-    }
-    .icon-header {
-      margin: 0px auto;
-      column-gap: 40px;
-      order: 2;
-    }
-
-    .title {
-      padding-top: 20px;
-      margin: 0px auto;
-      font-size: 50px;
-      order: 1;
-    }
-    .button {
-      margin: 0px auto;
-      order: 3;
-      margin-top: 10px;
-    }
-    .menu__items {
-      display: none;
-    }
-  }
-}
-
-@media (max-width: 767.98px) {
-  [class*="__container"] {
-    max-width: none;
-    padding: 0;
-    margin: 0;
-    .header__top {
-      justify-content: center;
-      align-items: center;
-      display: flexbox;
-      row-gap: 1px;
-      max-height: 120px;
-      margin-bottom: 15px;
-    }
-    .icon-header {
-      margin: 0px auto;
-      order: 2;
-    }
-
-    .title {
-      padding-top: 20px;
-      margin: 0px auto;
-      font-size: 40px;
-      order: 1;
-    }
-    .button {
-      margin: 0px auto;
-      order: 3;
-      margin-top: 0px;
-    }
-    .icon {
-      height: 35px;
-    }
-  }
-}
 //======================= content ======================================
 .content__container {
   overflow: hidden;
