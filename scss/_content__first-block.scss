@@ -1,0 +1,220 @@
+.first-block {
+  padding-top: 20px;
+  max-width: 100%;
+}
+.first-block__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.item__first-block {
+  padding-top: 10px;
+}
+.news-cards__with-photo {
+  flex: 0 1 30%;
+}
+.news-card-with-photo__item {
+  display: flex;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  padding-top: 3px;
+  padding-bottom: 18px;
+  min-width: 450px;
+}
+.news-card-with-photo__item:not(:first-child) {
+  padding-top: 20px;
+}
+.item-news-card-with-photo__image {
+  min-width: 245px;
+}
+.item-news-card-with-photo__image img {
+  min-width: 100%;
+}
+.item-news-card-with-photo__content {
+  min-width: 15rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.item-news-card-with-photo__title {
+  padding-top: 0px;
+  padding-bottom: 8px;
+}
+.title__card-with-photo {
+}
+.title {
+  font-size: 18px;
+  line-height: 25px;
+}
+.item-news-card-with-photo__text {
+  padding-bottom: 5px;
+}
+.text__card-with-photo {
+}
+.text {
+  font-size: 14px;
+  line-height: 19px;
+}
+.item-news-card-with-photo__date {
+}
+.date__item-card-with-photo {
+}
+.date {
+  color: rgba(115, 115, 115, 1);
+  font-weight: 93px;
+  line-height: 16px;
+}
+
+.blok__with-one-card {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  //max-width: 50rem;
+}
+
+.foto__blok-with-one-card {
+  border: 1px solid #000;
+  min-width: 40rem;
+}
+.foto__blok-with-one-card img {
+  max-width: 100%;
+}
+.blok-with-one-card__title {
+}
+.title__blok-with-one-card {
+  padding-top: 16px;
+}
+.blok-with-one-card__text {
+  padding-top: 7px;
+}
+
+.text__blok-with-one-card {
+}
+.blok-with-one-card__date {
+  padding-top: 8px;
+}
+.date__blok-with-one-card {
+  text-align: left;
+  align-self: flex-start;
+}
+
+.block-news-card__items {
+  flex: 0 1 26%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item__news-card {
+  padding-bottom: 16px;
+}
+.item-news-card__date {
+  text-align: left;
+}
+.date__item-news-card {
+}
+.item-news-card__text {
+  padding: 4px 0px 16px 0px;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+.text__item-news-card {
+  font-family: "Noto Serif";
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@media (max-width: 1569.98px) {
+  [class*="__container"] {
+    max-width: 95%;
+  }
+
+  .news-cards__with-photo {
+    flex: 0 1 45%;
+  }
+  .news-card-with-photo__item:last-child {
+    border-bottom: 0;
+  }
+  .first-block {
+    padding-top: 0;
+  }
+
+  .blok__with-one-card {
+    flex: 0 1 50rem;
+    align-items: center;
+  }
+  .blok-with-one-card__foto {
+    //max-width: 100%;
+  }
+
+  .block-news-card__items {
+    display: grid;
+    grid-template-columns: repeat(2, 200%);
+    align-items: center;
+  }
+  .item__news-card {
+    padding: 10px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+
+//  .news-cards {
+//    padding-top: 10px;
+//    max-width: 100%;
+//    flex: 1 1 auto;
+//  }
+//  .news-card__item {
+//    padding-top: 5px;
+//  }
+//}
+//@media (max-width: 767.98px) {
+//  [class*="__container"] {
+//    max-width: none;
+//    padding: 0;
+//    margin: 0;
+//  }
+//  .news-cards-with-foto {
+//    flex-direction: column;
+//    padding-left: 10px;
+//  }
+//  .item-card-with-foto {
+//    display: flex;
+//    flex-direction: row;
+//    justify-content: center;
+//    align-items: flex-start;
+//    padding: 10px 0px;
+//  }
+//  .item-card-with-foto__image {
+//    flex: 0 1 50%;
+//  }
+//  .item-card-with-foto__content {
+//    flex: 0 1 50%;
+//  }
+//}
+//@media (max-width: 694.98px) {
+//  .item-card-with-foto {
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    padding-top: 10px;
+//    padding-right: 10px;
+//  }
+//  .item-card-with-foto__image {
+//    min-width: 80%;
+//    margin: 0 auto;
+//  }
+//  .item-card-with-foto__image img {
+//    min-height: 100%;
+//  }
+//  .item-card-with-foto__content {
+//    //flex: 0 1 50%;
+//    max-width: 80%;
+//    overflow: hidden;
+//  }
+//}
